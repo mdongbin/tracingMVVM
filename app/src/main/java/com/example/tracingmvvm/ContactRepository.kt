@@ -1,6 +1,7 @@
 package com.example.tracingmvvm
 
 import android.app.Application
+import android.util.Log
 import androidx.lifecycle.LiveData
 
 class ContactRepository(application: Application) {
@@ -18,6 +19,7 @@ class ContactRepository(application: Application) {
             val thread = Thread(Runnable {
                 contactDao.insert(contact) })
             thread.start()
+            Log.e("data??", contact.toString())
         } catch (e: Exception) { }
     }
 

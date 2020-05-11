@@ -1,6 +1,7 @@
 package com.example.tracingmvvm
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
@@ -34,6 +35,9 @@ class AddActivity : AppCompatActivity() {
             } else {
                 val initial = name[0].toUpperCase()
                 val contact = Contact(id, name, number, initial)
+
+                Log.e("data?", initial.toString())
+                Log.e("data?", initial.toString())
                 contactViewModel.insert(contact)
                 finish()
             }
