@@ -1,3 +1,4 @@
+
 package com.example.tracingmvvm
 
 import android.os.Bundle
@@ -48,5 +49,8 @@ class AddActivity : AppCompatActivity() {
         const val EXTRA_CONTACT_NAME = "EXTRA_CONTACT_NAME"
         const val EXTRA_CONTACT_NUMBER = "EXTRA_CONTACT_NUMBER"
         const val EXTRA_CONTACT_ID = "EXTRA_CONTACT_ID"
+        fun dongbin(){
+
+        }
     }
 }

@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
+
 class ContactAdapter(val contactItemClick: (Contact) -> Unit, val contactItemLongClick: (Contact) -> Unit)
     : RecyclerView.Adapter<ContactAdapter.ViewHolder>() {
     private var contacts: List<Contact> = listOf()

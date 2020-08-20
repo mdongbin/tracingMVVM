@@ -57,7 +57,6 @@ class MainActivity : AppCompatActivity() {
             Log.e("dong", "value : " + s)
         }
 
-        Log.e("dong func", Dong(5, 5).toString())
     }
 
 

@@ -14,6 +14,7 @@ class ContactViewModel(application: Application) : AndroidViewModel(application)
         return this.contacts
     }
 
+
     fun insert(contact: Contact) {
         repository.insert(contact)
     }
